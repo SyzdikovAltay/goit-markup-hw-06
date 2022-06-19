@@ -398,15 +398,67 @@
             </form>
         </div>
     </footer> 
-    <div class="backdrop is-hidden" data-modal>
+    <form class="backdrop is-hidden" data-modal>
          <div class="modal">
              <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-btn-icon" width="11" height="11">
                     <use href="./images/icons.svg#icon-krest"></use>
                 </svg>
              </button>
+             <h3 class="backdrop-h3">Оставьте свои данные, мы вам перезвоним</h3>
+             <label for="full-name" class="backdrop-label">
+                <span class="backdrop-span">Имя</span>
+                <div class="div-input">
+                    <input class="contact-form-input" type="text" minlength="2">
+                    <svg class="svg-backdrop" width="12" height="12">
+                        <use href="./images/icons.svg#icon-name"></use>
+                    </svg>
+                </div>
+             </label>
+             <label class="backdrop-label">
+                <span class="backdrop-span">Телефон</span> 
+                <div class="div-input">
+                    <input 
+                    type="tel" 
+                    class="contact-form-input"
+                    required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    title="xxx-xxx-xx-xx">
+                    <svg class="svg-backdrop" width="12" height="12">
+                        <use href="./images/icons.svg#icon-tel"></use>
+                    </svg>
+                </div>
+             </label>
+             <label class="backdrop-label">
+                <span class="backdrop-span">Почта</span>
+                <div class="div-input">
+                    <input 
+                    type="email" 
+                    class="contact-form-input">
+                    <svg class="svg-backdrop" width="12" height="12">
+                        <use href="./images/icons.svg#icon-mail-convertt"></use>
+                    </svg>
+                </div>
+             </label>
+             <label class="backdrop-label">
+                <span class="backdrop-span">Комментарий</span>
+                <textarea 
+                    class="backdrop-textarea"
+                    name="user-massage" 
+                    placeholder="Введите текст">
+                </textarea>
+             </label>
+            <label class="backdrop-label">
+                <span class="backdrop-span">Соглашаюсь с рассылкой и принимаю <span class="web-blue">Условия договора</span></span>
+                <input 
+                type="checkbox" 
+                class="backdrop-checkbox" 
+                name="user-policy"
+                required>
+            </label>
+            <button type="submit" class="order-btn">Отправить</button>
          </div>
-    </div>
+    </form>
     <script src="./js/modal.js"></script>
 </body>
 </html>
