@@ -445,17 +445,17 @@
                 <textarea 
                     class="backdrop-textarea"
                     name="user-massage" 
-                    placeholder="Введите текст">
-                </textarea>
+                    placeholder="Введите текст"></textarea>
              </label>
-            <label class="backdrop-label">
-                <span class="backdrop-span">Соглашаюсь с рассылкой и принимаю <span class="web-blue">Условия договора</span></span>
-                <input 
-                type="checkbox" 
-                class="backdrop-checkbox" 
-                name="user-policy"
-                required>
-            </label>
+            <input 
+            class="backdrop-checkbox visually-hidden" 
+            type="checkbox" 
+            name="user-policy"
+            required
+            id="chekbx">
+             <label for="chekbx" class="checkbox-label"
+             ><span class="backdrop-a">Соглашаюсь с рассылкой и принимаю&nbsp;</span><a href="" class="backdrop-a2">Условия договора</a
+            ></label>
             <button type="submit" class="order-btn">Отправить</button>
          </div>
     </form>

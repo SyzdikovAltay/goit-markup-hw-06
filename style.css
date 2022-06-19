@@ -587,6 +587,12 @@ footer .webstudiolink{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--white-text);
+    outline: none;
+    transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-email-input:hover,
+.footer-email-input:focus{
+    border-color: var(--hover-color);
 }
 .footer-subscribe>.order-btn{
     margin-top: 0px;
@@ -820,13 +826,14 @@ footer .webstudiolink{
     left: 576px;
     top: 518px;
     padding: 12px 16px;
-    color:rgba(117, 117, 117, 0.5);
+    color:#212121;
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    resize: none;
 }
+
 .backdrop-span{
     display: block;
     margin-bottom: 4px;
@@ -836,13 +843,62 @@ footer .webstudiolink{
     /* identical to box height */
 
     letter-spacing: 0.01em;
-
+    cursor: pointer;
     color: var(--text-description-color);
 }
-.contact-form-input:hover{
+.checkbox-label{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.backdrop-a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-description-color);
+ }
+.backdrop-a2{
+   text-decoration:underline;
+   color: var(--hover-color);
+}
+.checkbox-label::before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121 ;
+    cursor: pointer;
+    /* background: var(--hover-color); */
+}
+.backdrop-checkbox:checked + .checkbox-label{
+    color: var(--hover-color);
+    
+}
+.backdrop-checkbox:focus + .checkbox-label{
+    color: var(--hover-color);  
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.contact-form-input:hover,
+.contact-form-input:focus{
     border-color:var(--hover-color);
 }
-.backdrop-textarea:hover{
+.backdrop-textarea:hover,
+.backdrop-textarea:focus{
     border-color:var(--hover-color);
 }
 .div-input{
@@ -858,6 +914,6 @@ footer .webstudiolink{
     fill: #212121;
 }
 .div-input:hover .svg-backdrop,
-.div-input:focus .svg-backdrop{
+.contact-form-input:focus + .svg-backdrop{
     fill: var(--hover-color);
 }
