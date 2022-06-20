@@ -25,6 +25,18 @@ img{
 body{
     font-family: 'Roboto';
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 main{
 }
 .container{
@@ -787,8 +799,9 @@ footer .webstudiolink{
     margin-top: 8px;
     
 }
-.modal-close-btn-icon{
-   
+.modal-close-btn-icon:hover .modal-close-btn{
+   fill: var(--hover-color);
+   border: var(--hover-color);
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -855,16 +868,11 @@ footer .webstudiolink{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
-
     letter-spacing: 0.03em;
-
     color: var(--text-description-color);
+    text-decoration:underline;
+    color: var(--hover-color);
  }
-.backdrop-a2{
-   text-decoration:underline;
-   color: var(--hover-color);
-}
 .checkbox-label::before{
     content: '';
     display: block;
@@ -872,27 +880,22 @@ footer .webstudiolink{
     height: 15px;
     border: 1px solid #212121 ;
     cursor: pointer;
-    /* background: var(--hover-color); */
 }
-.backdrop-checkbox:checked + .checkbox-label{
+.backdrop-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--text-description-color);
+}
+.backdrop-checkbox:checked + .checkbox-label::before{
     color: var(--hover-color);
+    background-color:var(--hover-color);
+    background-image: url(/for-sprite/galka.svg);
+    background-repeat: no-repeat;
     
 }
-.backdrop-checkbox:focus + .checkbox-label{
-    color: var(--hover-color);  
-}
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+
 .contact-form-input:hover,
 .contact-form-input:focus{
     border-color:var(--hover-color);
