@@ -893,7 +893,7 @@ footer .webstudiolink{
 .backdrop-checkbox:checked + .checkbox-label::before{
     color: var(--hover-color);
     background-color:var(--hover-color);
-    background-image: url(/for-sprite/galka.svg);
+    background-image: url(./for-sprite/galka.svg);
     background-repeat: no-repeat;
     
 }
