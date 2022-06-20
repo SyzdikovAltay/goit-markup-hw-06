@@ -869,6 +869,7 @@ footer .webstudiolink{
     display: flex;
     justify-content:center;
     align-items: center;
+    
 }
 .backdrop-a{
     font-weight: 400;
@@ -879,6 +880,7 @@ footer .webstudiolink{
     text-decoration:underline;
     color: var(--hover-color);
  }
+
 .checkbox-label::before{
     content: '';
     display: block;
@@ -886,6 +888,7 @@ footer .webstudiolink{
     height: 15px;
     border: 1px solid #212121 ;
     cursor: pointer;
+    margin-right: 9px;
 }
 .backdrop-text{
     font-weight: 400;
