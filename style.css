@@ -799,9 +799,11 @@ footer .webstudiolink{
     margin-top: 8px;
     
 }
-.modal-close-btn-icon:hover .modal-close-btn{
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:hover
+{
    fill: var(--hover-color);
-   border: var(--hover-color);
+   border-color: var(--hover-color);
 }
 .backdrop.is-hidden{
     opacity: 0;
