@@ -909,7 +909,7 @@ footer .webstudiolink{
 .backdrop-checkbox:checked + .checkbox-label::before{
     color: var(--hover-color);
     background-color:var(--hover-color);
-    background-image: url(./for-sprite/krest.svg);
+    background-image: url(./for-sprite/galka.svg);
     /* object-fit:contain; */
     background-repeat: no-repeat;
     
