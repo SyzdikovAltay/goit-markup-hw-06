@@ -902,9 +902,9 @@ footer .webstudiolink{
     color: var(--text-description-color);
 }
 .backdrop-checkbox{
-    /* position: relative;
+    position: relative;
     top: 3%;
-    left: -46%; */
+    left: -46%;
 }
 .backdrop-checkbox:checked + .checkbox-label::before{
     color: var(--hover-color);
