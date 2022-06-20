@@ -902,14 +902,15 @@ footer .webstudiolink{
     color: var(--text-description-color);
 }
 .backdrop-checkbox{
-    position: relative;
+    /* position: relative;
     top: 3%;
-    left: -46%;
+    left: -46%; */
 }
 .backdrop-checkbox:checked + .checkbox-label::before{
     color: var(--hover-color);
     background-color:var(--hover-color);
-    background-image: url(./for-sprite/galka.svg);
+    background-image: url(./for-sprite/krest.svg);
+    /* object-fit:contain; */
     background-repeat: no-repeat;
     
 }
