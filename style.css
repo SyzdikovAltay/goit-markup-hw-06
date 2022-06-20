@@ -891,6 +891,7 @@ footer .webstudiolink{
     border: 1px solid #212121 ;
     cursor: pointer;
     margin-right: 9px;
+    border-radius: 2px;
 }
 .backdrop-text{
     font-weight: 400;
