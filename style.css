@@ -810,7 +810,6 @@ footer .webstudiolink{
 .modal-close-btn:hover
 {
    fill: var(--hover-color);
-   border-color: var(--hover-color);
 }
 .backdrop.is-hidden{
     opacity: 0;
