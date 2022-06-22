@@ -837,7 +837,7 @@ footer .webstudiolink{
 }
 .backdrop-label{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 .backdrop-textarea{
     width: 100%;
@@ -864,7 +864,7 @@ footer .webstudiolink{
 
 .backdrop-span{
     display: block;
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -878,7 +878,7 @@ footer .webstudiolink{
     display: flex;
     justify-content:center;
     align-items: center;
-    
+    margin-top: 20px;
 }
 .backdrop-a{
     font-weight: 400;
@@ -899,6 +899,12 @@ footer .webstudiolink{
     cursor: pointer;
     margin-right: 9px;
     border-radius: 2px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-label:hover::before,
+.checkbox-label:focus::before{
+    border-color:var(--hover-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop-text{
     font-weight: 400;
@@ -933,6 +939,7 @@ footer .webstudiolink{
     position: relative;
     width: 100%;
     height: 40px;
+    margin-bottom: 10px;
 }
 .div-input>.svg-backdrop{
     position: absolute;
